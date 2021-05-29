@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象的遍历</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var stu={
+            name:"zhang san",
+            sex:" nan ",
+            age:20,
+            score:[1,25,5,3,6,1]
+        }
+        for(var i in stu){
+            document.writeln(i+":"+stu[i]+"<br />")
+        }
+        for(var i=0;i<stu.score.length;i++){
+            document.writeln(stu.score[i]);
+        }
+    </script>
+</html>

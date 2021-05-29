@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var cat={
+            name:"小花",
+            color:"白",
+            eat:function(){
+                document.writeln("猫吃鱼<br/>");
+            },
+            call:function(){
+                document.writeln("喵喵喵<br/>");
+            }
+        }
+        document.writeln("color:"+cat.color+"<br/>");          
+        cat.eat();
+        cat.call();
+
+        var cls=[
+            {
+                name:"张三",
+                sex:"男",
+                age:"18",
+                tel:"1814521545"
+            },
+            {
+                name:"李四",
+                sex:"女",
+                age:"17",
+                tel:"181546464"
+            },
+            {
+                name:"李梅",
+                sex:"女",
+                age:"19",
+                tel:"1815468484"
+            }
+        ]
+        for(var i=0;i<cls.length;i++){
+            document.writeln("这是第"+(i+1)+"个学生信息!<br/>")
+            for(var j in cls[i]){
+                document.writeln(j+":"+cls[i][j]+"<br/>");
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bd">
+    
+</body>
+<script>
+    var xq=["日","一","二","三","四","五","六",];
+    function show(){
+        var d=new Date();
+        var str="";
+        str+="年"+d.getFullYear()+"<br/>";
+        str+="月"+(d.getMonth()+1)+"<br/>";
+        str+="日"+d.getDate()+"<br/>";
+        str+="秒"+(d.getSeconds()<10?"0"+d.getSeconds():d.getSeconds())+"<br/>";
+        str+="星期"+xq[d.getDay()]+"<br/>"
+    // document.writeln("年"+d.getFullYear()+"<br/>");
+    // document.writeln("月"+(d.getMonth()+1)+"<br/>");
+    // document.writeln("日"+d.getDate()+"<br/>");
+    // document.writeln("秒"+d.getSeconds()+"<br/>");
+
+    document.getElementById("bd").innerHTML=str;
+    }
+    setInterval(show,1000)
+    
+</script>
+</html>

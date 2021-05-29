@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var pi=3.14;
+         function cg(){
+                document.writeln("haha");
+         }
+
+        //  var object={
+        //      pi:3.14,
+        //      cg:function(){
+        //          document.writeln("haha");
+        //      }
+        //  }
+        //  document.writeln(object.pi);
+        //  object.cg();
+        var student=[
+            {
+                name:"张三",
+                sex:"男",
+                age:"17"
+            },
+            {
+                name:"李四",
+                sex:"女",
+                age:"17"
+            }
+        ]
+        // document.writeln(student[0].name);
+        // document.writeln(student[1].name);
+        for(var i=0;i<student.length;i++){
+            for(var j in student[i]){
+                document.writeln(j+":"+student[i][j]+"<br/>");
+            }
+        }
+    </script>
+</html>

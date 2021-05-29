@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a="张三,李四,王五,赵六,红旗";
+    var b="财经学院是全国一流学院，人人都想去财经学院";
+
+    var arrs=a.split(",");
+    for(var i=0;i<arrs.length;i++){
+        document.writeln(arrs[i]);
+    }
+    var n=b.replace(/财经/g,"西昌");
+    document.writeln(n);
+</script>
+</html>

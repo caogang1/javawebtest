@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a=[1,2,5,3,1,5,12,364,1,8];
+    document.writeln("原本数组"+a+"<br/>");
+    a.shift();
+    document.writeln("删了前一位的数组"+a+"<br/>");
+    a.pop();
+    document.writeln("删了后一位的数组"+a+"<br/>");
+    a.push(6,5,1);
+    document.writeln("尾部增加数据的数组"+a+"<br/>");
+    a.splice(2,4,7,8,9,10)
+    document.writeln("特定位值增加数据"+a+"<br/>");
+</script>
+</html>

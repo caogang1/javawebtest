@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // JS对象
+    var stu={
+            name:"zhang san",
+            sex:" nan ",
+            age:20,
+            sing:function(){
+                document.writeln("啦啦啦啦~~~~~");
+            }
+        }
+    document.writeln(stu.name+"<br/>");
+    stu.sing();
+
+    // json对象
+    var stu1={
+            "name":"王五",
+            "sex":"男",
+            "age":20,
+            "sing":function(){
+                document.writeln("啦啦啦啦~~~~~");
+            }
+        }
+    document.writeln("<br/>"+stu1.name+"<br/>");
+    stu1.sing();
+    
+    // 转化为字符串
+    var str1=JSON.stringify(stu1);
+    document.writeln("<br/>"+str1+"<br/>")
+    var str2=JSON.parse(str1);
+    document.writeln(str2.name);
+    str2.sing();
+</script>
+</html>

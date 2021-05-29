@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" name="" id="666" value="打开">
+    <input type="button" name="" id="123" value="关闭">
+</body>
+<script>
+    function $(id){
+        return document.getElementById(id);
+    }
+    $("666").onclick=function(){
+        window.open("http://www.baidu.com","121","width=400px,height=300px,left=100px,top=300px");
+    }
+    $("123").onclick=function(){
+        window.close();
+    }
+</script>
+</html>
