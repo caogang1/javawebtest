@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>5.伪类选择器部分解释</title>
+		<style type="text/css">
+			p:nth-child(odd){   
+				/* 伪类选择器()里为条件,这里是奇数为黄绿.可使用表达式例如:3n,3n+1 */
+				background-color:yellowgreen ;
+			}
+						
+			h1:nth-child(3n+2){
+				/* 这里是2,5,8...为黄绿.表达式如:3n+2  //这里面的n是当前父节点的第一个孩子为标准
+				  如果使用在同一个父节点下可以使用  标签：nth-of-type()即可指定对应标签*/
+				background-color:yellowgreen ;
+			}
+			h2:nth-child(4){
+				/* 伪类选择器()里为条件,这里是第四行黄绿.4 */
+				background-color:yellowgreen ;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="">    <!-- 这里是上面的奇数偶数颜色改变 -->
+			<p>小明1</p>
+			<p>小明2</p>
+			<p>小明3</p>
+			<p>小明4</p>
+			<p>小明5</p>
+			<p>小明6</p>
+			<p>小明7</p>
+			<p>小明8</p>
+			<p>小明9</p>
+			<p>小明10</p>
+		</div>
+		<div id="">    <!-- 这里是2,5,8....颜色改变，这里使用div正确，但直接放在外面出现了问题 -->
+				<h1>1</h1>
+				<h1>2</h1>
+				<h1>3</h1>
+				<h1>4</h1>
+				<h1>5</h1>
+				<h1>6</h1>
+				<h1>7</h1>
+				<h1>8</h1>
+				<h1>9</h1>
+				<h1>10</h1>
+			</div>
+		<div id="">    <!-- 这里是第四行变色 -->
+			<h2>1</h2>
+			<h2>2</h2>
+			<h2>3</h2>
+			<h2>4</h2>
+			<h2>5</h2>
+			<h2>6</h2>
+			<h2>7</h2>
+		</div>	
+			
+	</body>
+</html>

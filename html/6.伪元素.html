@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>6.伪元素</title>
+		<style type="text/css">
+			div{
+				background-color: #BC8F8F;
+				height: 200px;
+				margin: 2px;
+			}
+			#ddm::after{   /* 这里的after可以更改为before那么文字位置将
+							会改变,after在后,before在前 */
+				content: "我是叮叮猫！（后）";
+				border: solid rosybrown 1px;
+			}
+			#ddm::before{
+				content: "我是叮叮猫！（前）";
+				border: solid rosybrown 1px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="ddm">   <!-- 这里使用的选择器里content里的文字，该最后标签最后追加一个标签。 -->
+			<p>1</p>
+			<p>2</p>
+		</div>
+		<div id="ddm1">      <!-- 这里使用的选择器里content里的文字，该最后标签第一追加一个标签。 -->
+			<p>1</p>
+			<p>2</p>
+		</div>
+	</body>
+</html>

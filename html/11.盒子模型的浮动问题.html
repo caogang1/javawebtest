@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>11.盒子模型的浮动问题</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a{               /* margin: 是外边距 padding是内边距; 加上上下左右可以控制左右间距*/
+				text-decoration: none;
+				border-right: solid #008000 1px;
+				border-left: solid #008000 1px;
+				margin: 5px;
+				padding: 5px;
+				/* border-radius: ;这是边框半径 */
+			}
+			a:hover{
+				background-color: #BC8F8F;
+				
+			}
+			#fly{
+				width: 70%;
+				height: 300px;
+				background-color: #FFFF00;
+				margin: 0 auto;
+				position: relative;
+			}
+			#fly1{
+				width: 70%;
+				height: 300px;
+				background-color: red;
+				margin: 0 auto;
+				position: relative;
+			}
+			#fly2{
+				width: 50%;
+				height: 100px;
+				background-color: white;
+				position:absolute;
+				left: 50px;
+				top: 50px;
+			}
+			#fly3{
+				width: 50%;
+				height: 100px;
+				background-color: yellow;
+				position:absolute;
+				left: 50px;
+				top: 100px;
+			}
+			#return{
+				width: 100px;
+				height: 100px;
+				background-color: aqua;
+				border-radius: 50%;
+				position: fixed;
+				right: 0px;
+				bottom: 0px;
+			}
+			#fu{
+				width: 500px;
+				height: 2000px;
+			}
+			#move{
+				width: 200px;
+				height: 100px;
+				background-color: antiquewhite;
+				position: sticky;
+				top: 500px;
+				right: 0px;
+			}
+			#returntop{
+				position: fixed;
+				right: 20px;
+				bottom: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="fly">     <!-- 凡是用了相对定位，都容易造成位置的偏移。
+							凡是用了相对定位的都是  坦克、凡是用了绝对定位的都是 飞机。
+							这里我们使用 外层使用相对定位 内层使用绝对定位 -->
+			<a href="" >哈哈哈哈</a>
+			<a href="">哈哈哈哈</a>
+			<a href="">哈哈哈哈</a>
+			<a href="">哈哈哈哈</a>
+			<a href="">哈哈哈哈</a>
+		</div>
+		<div id="fly1">
+			13121321<br />
+			13121321<br />
+			13121321<br />
+			13121321<br />
+			13121321<br />
+			13121321<br />
+			13121321<br />
+			13121321<br />
+			<div id="fly2">
+				
+			</div>
+			<div id="fly3">
+				
+			</div>
+		</div>
+		<div id="return"> 
+				<!-- 这里使用了固定定位，一般用于返回顶部或者底部 -->
+			<input type="submit" id="returntop" name="" value="返回顶部" />
+			
+			
+		</div>
+		<div id="move" >
+			
+		</div>
+		<div id="fu">
+			
+		</div>
+	</body>
+</html>
